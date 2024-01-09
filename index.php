@@ -57,6 +57,7 @@ foreach ($hotels as $hotelClass){
 
 
   echo $hotel;
+  
   echo "<br>";
 
  }
