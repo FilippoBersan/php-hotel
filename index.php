@@ -53,14 +53,14 @@
 
 // var_dump($hotels);
 
-foreach ($hotels as $keyProduct => $hotelClass){
+foreach ($hotels as $keyHotel => $hotelClass){
   
- foreach ($hotelClass as $keyProduct =>  $hotel){
+ foreach ($hotelClass as $keyHotel =>  $hotel){
 
 
 
   echo "<p>
-  $keyProduct: $hotel
+  $keyHotel: $hotel
   </p>";
 
 
