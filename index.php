@@ -46,19 +46,21 @@
   <title>PHP Hotels</title>
 </head>
 <body>
-  <p>
+
      <?php
 
 // var_dump($hotels);
 
 foreach ($hotels as $hotelClass){
+  
  foreach ($hotelClass as $hotel){
 
 
 
-  echo $hotel;
-  
-  echo "<br>";
+  echo "<p>
+  $hotel
+  </p>";
+
 
  }
 }
@@ -66,7 +68,7 @@ foreach ($hotels as $hotelClass){
 
 
 ?>
- </p>
+
  
   
 </body>
