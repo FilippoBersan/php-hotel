@@ -49,27 +49,41 @@
 </head>
 <body>
 
-     <?php
-
-// var_dump($hotels);
-
-foreach ($hotels as $keyHotel => $hotelClass){
-  
- foreach ($hotelClass as $keyHotel =>  $hotel){
 
 
 
-  echo "<p>
-  $keyHotel: $hotel
-  </p>";
+<h1 class="text-center mt-3 mb-5">PHP Hotels</h1>
+
+ <table class="table table-dark table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+       <th scope="col">Parking</th>
+    <th scope="col">Vote</th>
+     <th scope="col">Distance</th>
+    </tr>
+  </thead>
+  <tbody>
+      <?php foreach ($hotels as $hotel):  ?>
+    <tr>
+      <td>  <?php  echo $hotel['name'];  ?></td>
+      <td> <?php  echo $hotel['description'];  ?></td>
+      <td> <?php  echo $hotel['parking']  ?></td>
+            <td> <?php  echo $hotel['vote'];  ?></td>
+                  <td> <?php  echo $hotel['distance_to_center'];  ?></td>
+    </tr>
+         
+          <?php endforeach ?>
+  </tbody>
+</table>
 
 
- }
-}
 
 
 
-?>
+
+
 
  
   
